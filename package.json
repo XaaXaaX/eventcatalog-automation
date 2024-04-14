@@ -1,0 +1,16 @@
+{
+  "name": "cdk",
+  "version": "0.1.0",
+  "bin": {
+    "cdk": "bin/cdk.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "catalog:generate": "npm run generate --prefix catalog ",
+    "catalog:build": "npm run build --prefix catalog ",
+    "catalog:start": "npm run build --prefix catalog ",
+    "cdk:catalog": "npm run cdk:catalog:dev --prefix cdk -- --profile serverless -c env=dev"
+  }
+}
